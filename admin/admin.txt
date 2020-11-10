@@ -1,0 +1,18 @@
+admin/ 
+    index.php : here admin can add new data
+                => check for user log in yes: continue ; no: redirect ot admin/login/index.php
+                => logout script, directs to admin/login/logout.php
+    awards/news/projects/publication/students: same process as above
+
+
+
+admin/login
+    session.php : start session /// check login
+    logout.php : stop session, redirect to index.php
+
+    index.php   : just a file that directs to login-form.php:  admin/index.php based on login
+    login-form  : login form
+                    => check for log in, yes: admin/index.php  ; no : show form
+    api/login-action: validate form data and log the user in. head to index.php
+
+problems: login-action scripts

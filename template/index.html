@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Leven - Resume / CV / vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Leven - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        .carousel {
+            overflow: hidden;
+            width: 1920px;
+            height: 1080px;
+        }
+        
+        .carousel-fill {
+            height: -o-calc(100vh - 25px) !important;
+            height: -webkit-calc(100vh - 25px) !important;
+            height: -moz-calc(100vh - 25px) !important;
+            height: calc(100vh - 25px) !important;
+            /* width: calc(100vh - 75px) !important; */
+            width: auto !important;
+            overflow: hidden;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        #site_header {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .sticky+.content {
+            padding-top: 60px;
+        }
+        
+        .carousel-indicators li {
+            margin: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 110%;
+        }
+    </style>
+</head>
+
+<body class="page">
+
+    <!-- <div class="lm-animated-bg"></div> -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+        <div class="preloader-animation">
+            <div class="preloader-spinner">
+            </div>
+        </div>
+    </div>
+    <!-- /Loading animation -->
+    <div class="header-content clearfix lmpixels-navbar">
+
+        <div class="text-logo">
+            <a href="index-2.html">
+                <div class="logo-symbol">A</div>
+                <div class="logo-text">Atul <span>Srivastava</span></div>
+            </a>
+        </div>
+
+        <div class="site-nav mobile-menu-hide">
+            <ul class="leven-classic-menu site-main-menu">
+                <li class="menu-item current-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="resume.php">Professional Experience</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="publications.php">Publications</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="research.php">Research</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="students.php">Students</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="awards.php">Awards</a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="blog.html">Gallary</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="portfolio.html">Gallary</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Scroll To Top Button -->
+    <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
+    <!-- /Scroll To Top Button -->
+    <!-- <div class="page-scroll"> -->
+    <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
+
+        <!-- <header id="site_header" class="header"> -->
+        <div class="header-content clearfix">
+
+            <div class="text-logo">
+                <a href="index-2.html">
+                    <div class="logo-symbol">A</div>
+                    <div class="logo-text">Atul <span>Srivastava</span></div>
+                </a>
+            </div>
+
+            <div class="site-nav mobile-menu-hide">
+                <ul class="leven-classic-menu site-main-menu">
+                    <li class="menu-item  current-menu-item">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="resume.php">Professional Experience</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="publications.php">Publications</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="research.php">Research</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="students.php">Students</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="awards.php">Awards</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="blog.html">Gallary</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="portfolio.html">Gallary</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="menu-toggle mobile-visible">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- </header> -->
+
+        <div id="main" class="site-main">
+            <div id="main-content" class="single-page-content">
+                <div id="primary" class="content-area">
+                    <div id="content" class="page-content site-content single-post" role="main">
+
+
+                        <div class="p-20"></div>
+                        <div id="home_content" class="home-content third-style">
+                            <div class="start-page-full-width">
+
+                                <div id="myCarousel" class="carousel slide" data-interval="2000" data-ride="carousel" style="height: 800px; margin-left: 20px; max-width: 1440px; border-radius: 10px 10px 10px 10px;">
+
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./img/1.jpg" alt="First Slide" style="height:auto; width:1440px;">
+                                            <div class="carousel-caption" style="position: absolute; top: 500px; left: -900px;">
+                                                <h1>Welcome to the Webpage</h1>
+                                                <h2>of Professor Atul Srivastava</h2>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <video autoplay muted loop id="myVideo" style="height:auto; width:1440px;">
+                                                <source src="./img/mixkit.mp4" type="video/mp4">
+                                                Your browser does not support HTML5 video.
+                                              </video>
+                                            <!-- <img src="./img/2.jpg" alt="Second Slide" > -->
+                                            <div class="carousel-caption" style="position: absolute; top: 500px; left: -900px;">
+                                                <h1>Los Angeles</h1>
+                                                <p>LA is always so much fun!</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/3.jpg" alt="Third Slide" style="height:auto; width:1440px;">
+                                            <div class="carousel-caption" style="position: absolute; top: 500px; left: -900px;">
+                                                <h1>Los Angeles</h1>
+                                                <p>LA is always so much fun!</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <ol class="carousel-indicators" style="margin-left: auto; margin-right: auto;">
+                                        <li data-target="#myCarousel" data-slide-to="0" style="margin-left: 10px; margin-right: 10px;" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1" style="margin-left: 10px; margin-right: 10px;"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2" style="margin-left: 10px; margin-right: 10px;"></li>
+                                    </ol>
+                                </div>
+
+                                <div class="p-100"></div>
+                                <!-- <div class="p-50"></div> -->
+
+
+
+                                <div class="row" style="padding-left: 20px;">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="inner-content">
+                                            <div class="fill-block" style="background-image: url(img/main_photo.jpg);"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="inner-content inner-text-block">
+                                            <div class="hp-text-block">
+                                                <div class="owl-carousel text-rotation">
+                                                    <div class="item">
+                                                        <div class="sp-subtitle">Department of Mechanical Engineering
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="sp-subtitle">Professor</div>
+                                                    </div>
+                                                </div>
+
+                                                <h2 class="hp-main-title">Atul Srivastava</h2>
+                                                <p style="text-align: justify;">
+                                                    Time-dependent and three dimensional distribution of fluid velocities and transported properties such as temperature and species concentration are required in a range of applications. However, generating such voluminous data through experiments has always been a challenge. Conventional probe-based measurement techniques are intrusive in nature and are restricted to providing volume-averaged data only at a few selected points. Time constants associated with such probes limit their applications in highly transient and short-lived phenomena. The primary focus of our research group is to overcome this barrier of three dimensional unsteady whole field measurements using advanced measurement techniques that are completely inertia-free and non-intrusive in nature. These experimental measurements are complemented by numerical simulations performed using in-house developed codes as well as through commercially available software, for instance, Fluent. Some of the important areas of fluids and thermal sciences wherein the group has made significant impact include nanofluids, two-phase heat transfer (nucleate pool and flow boiling), droplets, bio-heat transfer and crystal growth.
+                                                </p>
+
+                                                <div class="hp-buttons">
+                                                    <a href="#" target="_blank" class="btn btn-primary">Download
+                                                            CV</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- </div>
+                        </div> -->
+
+
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12 ">
+                                        <div class="p-50"></div>
+
+                                        <div class="block-title">
+                                            <h2>What I Do</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-6 ">
+                                        <div class="info-list-w-icon">
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-pen"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Copywrite</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-display"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Web Design</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-xs-12 col-sm-6 ">
+                                        <div class="info-list-w-icon">
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-shop"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Ecommerce</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-megaphone"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Marketing</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12">
+                                        <div class="p-20"></div>
+
+                                        <!-- Testimonials -->
+                                        <div class="block-title">
+                                            <h2>Latest Updates</h2>
+                                        </div>
+
+                                        <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2" data-items="2">
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-content" style="height: 500px; background-image:url(img/testimonials/testimonial-1.jpg);background-repeat: no-repeat;background-size:cover; margin: 0;padding: 0px;">
+                                                    <div style="background-color: rgba(255, 255, 255, 0.5); margin-top: 300px;height: 200px; padding: 25px;">
+                                                        <div class="testimonial-author-info">
+                                                            <h5 class="testimonial-author" style="font-size: large;">Donec eu est vel metus consequat volutpat.</h5>
+                                                            <!-- <p class="testimonial-firm">Rolling Thunder</p> -->
+                                                        </div>
+                                                        <div class="testimonial-text">
+                                                            <p> Nunc aliquet euismod mauris, a feugiat urna ullamcorper non. Donec eu est vel metus consequat volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non. Donec eu est vel metus consequat
+                                                                volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-content" style="height: 500px; background-image:url(img/testimonials/testimonial-2.jpg);background-repeat: no-repeat;background-size:cover; margin: 0;padding: 0px;">
+                                                    <div style="background-color: rgba(255, 255, 255, 0.5); margin-top: 300px;height: 200px; padding: 25px;">
+                                                        <div class="testimonial-author-info">
+                                                            <h5 class="testimonial-author" style="font-size: large;">Donec eu est vel metus consequat volutpat.</h5>
+                                                            <!-- <p class="testimonial-firm">Rolling Thunder</p> -->
+                                                        </div>
+                                                        <div class="testimonial-text">
+                                                            <p> Nunc aliquet euismod mauris, a feugiat urna ullamcorper non. Donec eu est vel metus consequat volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non. Donec eu est vel metus consequat
+                                                                volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-item">
+                                                <div class="testimonial-content" style="height: 500px; background-image:url(img/testimonials/testimonial-3.jpg);background-repeat: no-repeat;background-size:cover; margin: 0;padding: 0px;">
+                                                    <div style="background-color: rgba(255, 255, 255, 0.5); margin-top: 300px;height: 200px; padding: 25px;">
+                                                        <div class="testimonial-author-info">
+                                                            <h5 class="testimonial-author" style="font-size: large;">Donec eu est vel metus consequat volutpat.</h5>
+                                                            <!-- <p class="testimonial-firm">Rolling Thunder</p> -->
+                                                        </div>
+                                                        <div class="testimonial-text">
+                                                            <p> Nunc aliquet euismod mauris, a feugiat urna ullamcorper non. Donec eu est vel metus consequat volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non. Donec eu est vel metus consequat
+                                                                volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12">
+                                        <div class="p-20"></div>
+
+                                        <!-- Testimonials -->
+                                        <div class="block-title">
+                                            <h2>Testimonials</h2>
+                                        </div>
+
+                                        <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2" data-items="2">
+                                            <!-- Testimonial 1 -->
+                                            <div class="testimonial-item">
+                                                <!-- Testimonial Content -->
+                                                <div class="testimonial-content">
+                                                    <!-- Picture -->
+                                                    <div class="testimonial-picture">
+                                                        <img src="img/testimonials/testimonial-1.jpg" alt="Billy Adams" />
+                                                    </div>
+                                                    <!-- /Picture -->
+
+                                                    <!-- Testimonial Text -->
+                                                    <div class="testimonial-text">
+                                                        <p>Donec eu est vel metus consequat volutpat. Nunc aliquet euismod mauris, a feugiat urna ullamcorper non.</p>
+                                                    </div>
+                                                    <!-- /Testimonial Text -->
+
+                                                    <!-- Testimonial author information -->
+                                                    <div class="testimonial-author-info">
+                                                        <h5 class="testimonial-author">Billy Adams</h5>
+                                                        <p class="testimonial-firm">Rolling Thunder</p>
+                                                    </div>
+                                                    <!-- /Testimonial author information -->
+
+                                                    <div class="testimonial-icon">
+                                                        <i class="fa fa-quote-left"></i>
+                                                    </div>
+
+                                                    <div class="testimonial-icon-big">
+                                                        <i class="fa fa-quote-right"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial Content -->
+                                            </div>
+                                            <!-- End of Testimonial 1 -->
+
+                                            <!-- Testimonial 2 -->
+                                            <div class="testimonial-item">
+                                                <!-- Testimonial Content -->
+                                                <div class="testimonial-content">
+                                                    <!-- Picture -->
+                                                    <div class="testimonial-picture">
+                                                        <img src="img/testimonials/testimonial-2.jpg" alt="Gary Johnson" />
+                                                    </div>
+                                                    <!-- /Picture -->
+
+                                                    <!-- Testimonial Text -->
+                                                    <div class="testimonial-text">
+                                                        <p>Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.</p>
+                                                    </div>
+                                                    <!-- /Testimonial Text -->
+
+                                                    <!-- Testimonial author information -->
+                                                    <div class="testimonial-author-info">
+                                                        <h5 class="testimonial-author">Gary Johnson</h5>
+                                                        <p class="testimonial-firm">Locost Accessories</p>
+                                                    </div>
+                                                    <!-- /Testimonial author information -->
+
+                                                    <div class="testimonial-icon">
+                                                        <i class="fa fa-quote-left"></i>
+                                                    </div>
+
+                                                    <div class="testimonial-icon-big">
+                                                        <i class="fa fa-quote-right"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial Content -->
+                                            </div>
+                                            <!-- End of Testimonial 2 -->
+
+                                            <!-- End of Testimonial 3 -->
+                                            <div class="testimonial-item">
+
+                                                <!-- Testimonial Content -->
+                                                <div class="testimonial-content">
+                                                    <!-- Picture -->
+                                                    <div class="testimonial-picture">
+                                                        <img src="img/testimonials/testimonial-3.jpg" alt="Daniel Pringle" />
+                                                    </div>
+                                                    <!-- /Picture -->
+
+                                                    <!-- Testimonial Text -->
+                                                    <div class="testimonial-text">
+                                                        <p>Etiam pretium ipsum quis justo dictum accumsan. Phasellus egestas odio a velit scelerisque.</p>
+                                                    </div>
+                                                    <!-- /Testimonial Text -->
+
+                                                    <!-- Testimonial author information -->
+                                                    <div class="testimonial-author-info">
+                                                        <h5 class="testimonial-author">Daniel Pringle</h5>
+                                                        <p class="testimonial-firm">Sagebrush</p>
+                                                    </div>
+                                                    <!-- /Testimonial author information -->
+
+                                                    <div class="testimonial-icon">
+                                                        <i class="fa fa-quote-left"></i>
+                                                    </div>
+
+                                                    <div class="testimonial-icon-big">
+                                                        <i class="fa fa-quote-right"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- /Testimonial Content -->
+
+                                            </div>
+                                            <!-- End of Testimonial 3 -->
+                                        </div>
+                                        <!-- /Testimonials -->
+
+                                        <div class="p-40"></div>
+
+                                        <!-- Clients Slider -->
+                                        <div class="block-title">
+                                            <h2>Awards</h2>
+                                        </div>
+
+                                        <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="Golden Grid">
+                                                    <img src="img/clients/client-1.png" alt="Golden Grid">
+                                                </a>
+                                            </div>
+
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="Sweety">
+                                                    <img src="img/clients/client-2.png" alt="Sweety">
+                                                </a>
+                                            </div>
+
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="Magic Furnitures">
+                                                    <img src="img/clients/client-3.png" alt="Magic Furnitures">
+                                                </a>
+                                            </div>
+
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="LifeGuard">
+                                                    <img src="img/clients/client-4.png" alt="LifeGuard">
+                                                </a>
+                                            </div>
+
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="LESS">
+                                                    <img src="img/clients/client-5.png" alt="LESS">
+                                                </a>
+                                            </div>
+
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="Design Lovers">
+                                                    <img src="img/clients/client-6.png" alt="Design Lovers">
+                                                </a>
+                                            </div>
+
+                                            <div class="client-block">
+                                                <a href="#" target="_blank" title="WordPress">
+                                                    <img src="img/clients/client-7.png" alt="WordPress">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- /Clients Slider -->
+
+                                        <div class="p-40"></div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12 ">
+                                        <!-- <div class="p-50"></div> -->
+
+                                        <div class="block-title">
+                                            <h2>Current Projects</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-6 ">
+                                        <div class="info-list-w-icon">
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="lnr lnr-chevron-right"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Copywrite</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="lnr lnr-chevron-right"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Web Design</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-xs-12 col-sm-6 ">
+                                        <div class="info-list-w-icon">
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="lnr lnr-chevron-right"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Ecommerce</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="lnr lnr-chevron-right"></i>
+                                                </div>
+
+                                                <div class="ci-text">
+                                                    <h4>Marketing</h4>
+                                                    <p>Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat. Vivamus blandit, dolor vitae lacinia maximus, risus velit vehicula odio, a tincidunt turpis
+                                                        turpis tempus ex.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-40"></div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12">
+                                        <div class="block-title">
+                                            <h2>Achievements</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-3">
+                                        <div class="lm-info-block gray-default">
+                                            <i class="linecons linecons-star"></i>
+                                            <h4>Awards Won</h4>
+                                            <span class="lm-info-block-value">578</span>
+                                            <span class="lm-info-block-text"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-xs-12 col-sm-3">
+                                        <div class="lm-info-block gray-default">
+                                            <i class="linecons linecons-note"></i>
+                                            <h4>Articles Published</h4>
+                                            <span class="lm-info-block-value">4,780</span>
+                                            <span class="lm-info-block-text"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-xs-12 col-sm-3 ">
+                                        <div class="lm-info-block gray-default">
+                                            <i class="linecons linecons-study"></i>
+                                            <h4>Projects Completed</h4>
+                                            <span class="lm-info-block-value">15</span>
+                                            <span class="lm-info-block-text"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-xs-12 col-sm-3 ">
+                                        <div class="lm-info-block gray-default">
+                                            <i class="linecons linecons-user"></i>
+                                            <h4>PhD Students</h4>
+                                            <span class="lm-info-block-value">1,286</span>
+                                            <span class="lm-info-block-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-40"></div>
+
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12">
+                                        <div class="block-title">
+                                            <h2>Gallary</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12 ">
+                                        <div class="fw-pricing clearfix row">
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/1.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/2.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/3.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/4.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-40"></div>
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12 ">
+                                        <div class="fw-pricing clearfix row">
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/5.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/6.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/7.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="fw-package-wrap col-md-3">
+                                                <div class="lm-info-block gray-default" style="margin: 0; padding: 0px;">
+                                                    <a href="#" target="_blank" title="Golden Grid">
+                                                        <img src="img/portfolio/8.jpg" alt="Golden Grid" style="width: 100%;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-60"></div>
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-12">
+                                        <div class="block-title">
+                                            <h2>Get in Touch</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-xs-12 col-sm-4 ">
+
+                                        <div id="info_list_1" class="info-list-w-icon">
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-phone"></i>
+                                                </div>
+                                                <div class="ci-text">
+                                                    <h4>415-832-2000</h4>
+                                                    <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-location"></i>
+                                                </div>
+                                                <div class="ci-text">
+                                                    <h4>IIT Bombay, Mumbai</h4>
+                                                    <p>Room No. 101, Department Of Civil Engineering</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="info-block-w-icon">
+                                                <div class="ci-icon">
+                                                    <i class="linecons linecons-mail"></i>
+                                                </div>
+                                                <div class="ci-text">
+                                                    <h4><a href="https://lmpixels.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="244c4148484b64415c45495448410a474b49">[email&#160;protected]</a>
+                                                    </h4>
+                                                    <p>Duis erat leo, aliquam laoreet fringilla quis, pretium vitae dui.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class=" col-xs-12 col-sm-8 ">
+
+                                        <div class="block-title">
+                                            <h2>How Can I Help You?</h2>
+                                        </div>
+
+                                        <form id="contact_form" class="contact-form" action="https://lmpixels.com/demo/leven-html-new/full-width-light/contact_form/contact_form.php" method="post">
+
+                                            <div class="messages"></div>
+
+                                            <div class="controls two-columns">
+                                                <div class="fields clearfix">
+                                                    <div class="left-column">
+                                                        <div class="form-group form-group-with-icon">
+                                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+
+                                                        <div class="form-group form-group-with-icon">
+                                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+
+                                                        <div class="form-group form-group-with-icon">
+                                                            <input id="form_name" type="text" name="subject" class="form-control" placeholder="Subject" required="required" data-error="Subject is required.">
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right-column">
+                                                        <div class="form-group form-group-with-icon">
+                                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                                            <div class="form-control-border"></div>
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+
+                                                <input type="submit" class="button btn-send disabled" value="Send message">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="site-footer clearfix">
+            <div class="footer-social">
+                <ul class="footer-social-links">
+                    <li>
+                        <a href="#" target="_blank">Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">Facebook</a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-copyrights">
+                <p>© 2020 All rights reserved. Department Of Civil Engineering, IIT Bombay.</p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- </div> -->
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src='../../../../www.google.com/recaptcha/api.js'></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="js/jquery.googlemap.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from lmpixels.com/demo/leven-html-new/full-width-light/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Aug 2020 22:17:31 GMT -->
+
+</html>
